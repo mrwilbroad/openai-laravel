@@ -34,7 +34,7 @@ Route::prefix("/OpenAi")->group(function () {
         Route::get("dashboard", "index");
         Route::post("dashboard", "Store");
     });
-});
+})->middleware(['auth']);
 
 
 
